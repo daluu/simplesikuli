@@ -29,3 +29,7 @@ Javadoc documentation soon to come.
 = Use with Robot Framework as test library =
 
 See RobotFrameworkIntegration page.
+
+= Use with XML-RPC (server) =
+
+See UseWithXmlRpc page.
