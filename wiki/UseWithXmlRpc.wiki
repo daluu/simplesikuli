@@ -4,7 +4,7 @@
 
 There are possibly other ways to use this library with XML-RPC. But one easy straight-forward way is to use the Java remote library server that's designed for Robot Framework, but instead use it stand-alone and not with Robot Framework.
 
-*NOTE:* that for this method, you run the XML-RPC server with Sikuli on the machine where Sikuli will run. You then make calls to Sikuli remotely over XML-RPC.
+*NOTE:* that for this method, you run the XML-RPC server with Sikuli on the machine where Sikuli will run. You then make calls to Sikuli remotely over XML-RPC from same machine or a remote machine.
 
 *NOTE:* if you just want to remotely execute Sikuli (IDE) scripts over XML-RPC rather than execute Sikuli API commands then take a look at this project: [https://github.com/enix12enix/sikuliserver Sikuli XML-RPC server for executing Sikuli scripts remotely]
 
