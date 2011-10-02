@@ -12,7 +12,7 @@ Run command like follows:
 
   `java -cp .;sikuli-script.jar org.robotframework.remotelibrary.SikuliLibrary command [parameters]`
 
-or if you package everything into a single JAR (untested by me)
+or if you package everything into a single JAR (untested by me, see later section)
 
   `java -jar sikuliLibrary.jar command [parameters]`
 
