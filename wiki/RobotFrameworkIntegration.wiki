@@ -65,3 +65,5 @@ So would be helpful if someone in the community can help me figure out how to pr
 || ||Should Be True||${result}||# verify object detected|| ||
 || ||${result}=||Hover Over Object||C:\\Temp\\nonExistentObject.png||# try hover over object||	
 || ||Should Not Be True||${result}||# verify previous command failed|| ||
+
+*NOTE:* If you want exceptions for test failure rather than checking true/false for pass/fail, then remove exception handling from SikuliLibrary methods, and modifying methods to "throws FindFailedException"
