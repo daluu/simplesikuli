@@ -35,7 +35,7 @@ I won't go over how to execute Robot Framework tests with either of these method
 
 However, you will need to add reference to sikuli-script.jar and maybe more to your Java/Jython and Python class paths.
 
-== Import remote library to Robot Framework test suite ==
+== Import Java library to Robot Framework test suite ==
 
 ||Setting||Value||
 ||Library||org.robotframework.remotelibrary.SikuliLibrary||
