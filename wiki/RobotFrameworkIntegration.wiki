@@ -1,0 +1,29 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+This page documents how to use this SikuliLibrary with Robot Framework. There are 2 methods, both described below.
+
+= As (native) Java remote library =
+
+This has only been tested with the pure Java remote library server. Using as Java remote library over Jython (via Python remote library server executed over Jython) will be similar the other method of using as native Java library with Robot Framework (via Jython).
+
+See [http://code.google.com/p/jrobotremoteserver/wiki/RemoteServerDetails Java remote library server usage details] for an overview first.
+
+To use with SikuliLibrary, you simply add sikuli-script.jar to the classpath, and replace the ExampleLibrary as library parameter value on that page with:
+
+  `org.robotframework.remotelibrary.SikuliLibrary`
+
+For the classpath reference, I put a copy of sikuli-script.jar in local path of the Java remote library server and added classpath reference to it. You could alternatively use classpath reference to the Sikuli JAR's installation directory under Program Files, etc. (untested by me).
+
+I won't go over how to execute Robot Framework tests using the remote library but here's an example of how to use the remote library in the test suite:
+
+== Robot Framework test case using Sikuli remote library =
+
+
+
+= As native Java library with Robot Framework via Jython =
+
+Can be used with Robot Framework via Jython & Jybot or the all-in-one packaged Robot Framework JAR requiring only Java. 
+
+I won't go over how to execute Robot Framework tests with either of these methods, but the way you use/import the library in the test suite is the same either way.
