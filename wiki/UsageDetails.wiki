@@ -33,3 +33,21 @@ See RobotFrameworkIntegration page.
 = Use with XML-RPC (server) =
 
 See UseWithXmlRpc page.
+
+= Packaging SikuliLibrary into a JAR =
+
+Could be done for easier Robot Framework integration (as remote library or just Java library), or for easier command line execution, or easier deployment as XML-RPC server.
+
+*NOTE:* this packaging currently not tested.
+
+ `cd bin`
+
+ `#add your test libraries within this bin folder structure if not already`
+
+ `#Extract the bundled jars`
+
+ `jar xf sikuli-script.jar`
+
+ `#Create the new jar containing everything`
+
+ `jar cvfe sikuliLibrary.jar org/robotframework/remotelibrary/SikuliLibrary org/ sikuli/`
