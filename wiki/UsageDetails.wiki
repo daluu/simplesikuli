@@ -1,0 +1,31 @@
+#summary Info on how to use simplesikuli
+
+= Pre-requisites =
+
+  * Sikuli X installed.
+  * Any needed class path & system path environment variables set up (see Sikuli website and various online postings about path issues)
+  * Good idea to verify Sikuli working for you, via Sikuli IDE, etc.
+
+= Command-line use =
+
+Run command like follows:
+
+  `java -cp .;sikuli-script.jar org.robotframework.remotelibrary.SikuliLibrary command [parameters]`
+
+or if you package everything into a single JAR (untested by me)
+
+  `java -jar sikuliLibrary.jar command [parameters]`
+
+Run without command and subsequent parameters to get a display of the available commands and usage details.
+
+*NOTE:* commands return a return code of 0 (false/fail) or 1 (true/pass), which can be used by the external calling script or application (for integration use) to determine pass/fail status. Commands also output similar info to standard output.
+
+= API use =
+
+Nothing to really document here. You just include the class in your Java code/project and call the class methods as needed.
+
+Javadoc documentation soon to come.
+
+= Use with Robot Framework as test library =
+
+See RobotFrameworkIntegration page.
