@@ -2,7 +2,7 @@
 
 = Introduction =
 
-This page documents how to use this SikuliLibrary with Robot Framework. There are 2 methods, both described below.
+This page documents how to use this SikuliLibrary with Robot Framework. There are 2 methods, both described below. As well as a test case sample demonstrating how to use the library.
 
 = As (native) Java remote library =
 
@@ -18,12 +18,48 @@ For the classpath reference, I put a copy of sikuli-script.jar in local path of 
 
 I won't go over how to execute Robot Framework tests using the remote library but here's an example of how to use the remote library in the test suite:
 
-== Robot Framework test case using Sikuli remote library =
+== Import remote library to Robot Framework test suite ==
 
+||Setting||Value||Value||Value||
+||Library||Remote||http://localhost:8270||#Replace localhost & port as needed||
 
+This is also assuming you've started the remote server per the previous section.
 
 = As native Java library with Robot Framework via Jython =
 
 Can be used with Robot Framework via Jython & Jybot or the all-in-one packaged Robot Framework JAR requiring only Java. 
 
 I won't go over how to execute Robot Framework tests with either of these methods, but the way you use/import the library in the test suite is the same either way.
+
+However, you will need to add reference to sikuli-script.jar and maybe more to your Java/Jython and Python class paths.
+
+== Import remote library to Robot Framework test suite ==
+
+||Setting||Value||
+||Library||org.robotframework.remotelibrary.SikuliLibrary||
+
+== Issues with Java library over Jython ==
+
+*Request for public/community help here...*
+
+Granted I've only tested using the Robot Framework JAR method rather than the Python install with Jython. But I haven't gotten the library to work yet. Using library import from previous section, and test case from next section, and running test like follows:
+
+ `java -cp .;sikuli-script.jar -jar robotframework-2.5.7.jar demo.tsv`
+
+I run into the following error:
+
+ `java.lang.NoClassDefFoundError: org/sikuli/script/Screen`
+       `at`   
+ `org.robotframework.remotelibrary.SikuliLibrary.object_exists(SikuliLibrary.java:49)`
+
+Tried several other variations in setting class path but this was the closest working error I could get to. That is, this SikuliLibrary is found and called, but seems Robot Framework can't find the core Sikuli classes via the class path, unlike the remote library server method, which works.
+
+So would be helpful if someone in the community can help me figure out how to properly reference Sikuli in class path and execute a sample test with this SikuliLibrary (via Jython or the JAR method, or both).
+
+= Example usage of library in Robot Framework test cases =
+
+||Test Case||Action||Argument||Argument||Argument||
+||Sikuli Library Demo||${result}=||Object Exists||C:\\Temp\\startMenu.png||${60}||
+|| ||Should Be True||${result}||# verify object detected|| ||
+|| ||${result}=||Hover Over Object||C:\\Temp\\nonExistentObject.png||# try hover over object||	
+|| ||Should Not Be True||${result}||# verify previous command failed|| ||
