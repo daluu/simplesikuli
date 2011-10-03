@@ -1,3 +1,5 @@
+#summary call for help to get this working
+
 *Request for public/community help here...*
 
 Following [http://code.google.com/p/robotframework/wiki/JavaIntegration Robot Framework Java Integration] procedures, I still can't get it to work. Good thing the Jython + Robot Framework (Python install) method works. Anybody have some input on this? Here's what I've found so far:
