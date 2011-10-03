@@ -2,7 +2,9 @@
 
 *Request for public/community help here...*
 
-Following [http://code.google.com/p/robotframework/wiki/JavaIntegration Robot Framework Java Integration] procedures, I still can't get it to work. Good thing the Jython + Robot Framework (Python install) method works. Anybody have some input on this? Here's what I've found so far:
+Following [http://code.google.com/p/robotframework/wiki/JavaIntegration Robot Framework Java Integration] procedures, I still can't get it to work. Good thing the Jython + Robot Framework (Python install) method works. Anybody have some input on this? Here's what I've found so far.
+
+Note that all this trial & error is done on Windows environment, though assume may run into similar issues on Linux and Mac.
 
 Here are the type of classpath errors I get trying to run some tests:
 
