@@ -55,7 +55,7 @@ As an example, for setting classpath on Windows from command line, assuming you 
 
 You might need same steps as the Jython procedure. And/or some other procedures as defined under [http://code.google.com/p/robotframework/wiki/JavaIntegration Robot Framework Java Integration].
 
-Unfortunately, I haven't been able to get this config working for SikuliLibrary. See IssuesWithRobotFramworkJar.
+Unfortunately, I haven't been able to get this config working for SikuliLibrary. See IssuesWithRobotFrameworkJar.
 
 == Import Java library to Robot Framework test suite ==
 
