@@ -10,9 +10,11 @@ There are possibly other ways to use this library with XML-RPC. But one easy str
 
 See [http://code.google.com/p/jrobotremoteserver/wiki/RemoteServerDetails Java remote library server usage details] for an overview first.
 
-To use with SikuliLibrary, you simply add sikuli-script.jar to the classpath, and replace the ExampleLibrary as library parameter value on that page with:
+To use with SikuliLibrary, you simply add sikuli-script.jar to the classpath, and replace the ExampleLibrary as library parameter value with:
 
   `org.robotframework.remotelibrary.SikuliLibrary`
+
+and place a copy of the SikuliLibrary class file (or perhaps JAR equivalent) to the remote server working directory (where ExampleLibrary also resides).
 
 For the classpath reference, I put a copy of sikuli-script.jar in local path of the Java remote library server and added classpath reference to it. You could alternatively use classpath reference to the Sikuli JAR's installation directory under Program Files, etc. (untested by me).
 
