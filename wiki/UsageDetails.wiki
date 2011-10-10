@@ -1,5 +1,7 @@
 #summary Info on how to use simplesikuli
 
+The library can be used in 3 ways as described below.
+
 = Pre-requisites =
 
   * Sikuli X installed.
