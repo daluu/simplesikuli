@@ -4,7 +4,7 @@
 
 This page documents how to use this SikuliLibrary with Robot Framework. There are 2 methods, both described below. As well as a test case sample demonstrating how to use the library.
 
-*NOTE:* that for Robot Framework integration with Sikuli, it is assumed you are already familiar with [http://www.robotframework.org Robot Framework] and perhaps you should already have read:
+*NOTE:* that for Robot Framework integration with Sikuli, it is assumed you are already familiar with [http://www.robotframework.org Robot Framework] and perhaps you should already have read the following article for background reference:
 
 http://blog.mykhailo.com/2011/02/how-to-sikuli-and-robot-framework.html
 
