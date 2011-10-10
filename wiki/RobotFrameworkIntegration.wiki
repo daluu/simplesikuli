@@ -32,9 +32,13 @@ As an example, for setting classpath on Windows from command line, assuming you 
 
 == Using with Robot Framework JAR ==
 
-You might need same steps as the Jython procedure. And/or some other procedures as defined under [http://code.google.com/p/robotframework/wiki/JavaIntegration Robot Framework Java Integration].
+  # Set class path and execute Robot Framework test all in one step.
 
-Unfortunately, I haven't been able to get this config working for SikuliLibrary. See IssuesWithRobotFrameworkJar.
+Steps here are similar to the Jybot method with one exception, class path search order matters here. So set RF Jar as first in class path reference, before others like this on Windows:
+
+  `java -cp robotframework-2.5.7.jar:sikuli-script.jar:. org.robotframework.RobotFramework demo.tsv`
+
+Otherwise, you will get exceptions about not being able to find or import robot or robotframework, etc.
 
 == Import Java library to Robot Framework test suite ==
 
