@@ -4,6 +4,10 @@
 
 This page documents how to use this SikuliLibrary with Robot Framework. There are 2 methods, both described below. As well as a test case sample demonstrating how to use the library.
 
+*NOTE:* that for Robot Framework integration with Sikuli, it is assumed you are already familiar with [http://www.robotframework.org Robot Framework] and perhaps you should already have read:
+
+http://blog.mykhailo.com/2011/02/how-to-sikuli-and-robot-framework.html
+
 = As native Java library with Robot Framework via Jython or JAR file =
 
 In theory, should be able to use with Robot Framework via Jython & Jybot or the all-in-one packaged Robot Framework JAR requiring only Java.
