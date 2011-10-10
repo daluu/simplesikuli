@@ -1,6 +1,7 @@
 #summary call for help to get this working
+#labels Deprecated
 
-*Request for public/community help here...*
+*This page now obsolete, found fix. See RobotFrameworkIntegration page.*
 
 Following [http://code.google.com/p/robotframework/wiki/JavaIntegration Robot Framework Java Integration] procedures, I still can't get it to work. Good thing the Jython + Robot Framework (Python install) method works. 
 
