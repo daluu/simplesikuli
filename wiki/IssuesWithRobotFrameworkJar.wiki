@@ -8,7 +8,7 @@ Anybody have some input on this? Do let me know if you are able to get it to wor
 
 Here's what I've found so far.
 
-Note that all this trial & error is done on Windows environment, though assume may run into similar issues on Linux and Mac.
+Note that all this trial & error is done on Windows environment, though assume may run into similar issues on Linux and Mac. And on Windows, Sikuli X installed to default location & class paths, and put a copy of Sikuli Jar to same path as Robot Framework Jar.
 
 Here are the type of classpath errors I get trying to run some tests:
 
@@ -48,5 +48,7 @@ I run into the following type of error:
  `java.lang.NoClassDefFoundError: org/sikuli/script/Screen`
        `at`   
  `org.robotframework.remotelibrary.SikuliLibrary.object_exists(SikuliLibrary.java:49)`
+
+Also didn't help trying to set %CLASSPATH% in command line before executing Robot Framework test, same results.
 
 So would be helpful if someone in the community can help me figure out how to properly reference Sikuli in class path and execute a sample test with this SikuliLibrary using the Robot Framework JAR method.
