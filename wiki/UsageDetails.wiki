@@ -8,6 +8,7 @@ The library can be used in 3 to 4 ways as described below.
   * Sikuli X installed.
   * Any needed class path & system path environment variables set up (see Sikuli website and various online postings about path issues)
   * Good idea to verify Sikuli working for you, via Sikuli IDE, etc.
+  * On Mac and Linux, additional installation of OpenCV, see this blog post: http://selesik.blogspot.com/2011/12/how-to-integrate-sikuli-in-selenium.html
 
 = Command-line use =
 
